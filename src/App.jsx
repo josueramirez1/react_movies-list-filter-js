@@ -14,10 +14,10 @@ function filteredArrayOfMovies(q, m) {
       alteredMovieTitle.includes(normalizedQuery) ||
       alteredMovieDescription.includes(normalizedQuery)
     ) {
-      return movie;
+      return true;
     }
 
-    return null;
+    return false;
   });
 
   return filteredMovies;
